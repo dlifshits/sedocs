@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    # Standard drop-in approach that should work for most people.
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+
+    - uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: docs/build/html/ # The folder the action should deploy.
