@@ -7,7 +7,7 @@ This is a demo site for theme_display, generated as part of
 
 .. important::
 
-    This (some change) sample documentation was generated on |today|, and is rebuilt weekly.
+    This sample documentation was generated on |today|, and is rebuilt weekly.
 
 
 Quickstart
